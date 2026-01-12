@@ -1,15 +1,14 @@
 .education-background {
   background-color: black;
   width: 100%;
-  height: 90vh;
+  min-height: 90vh;
   color: white;
   display: flex;
   justify-content: space-evenly;
+  padding: 40px 20px;
 }
 .education-left {
   width: 40%;
-  height: 80vh;
-  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,8 +17,6 @@
 }
 .education-right {
   width: 40%;
-  height: 80vh;
-  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,7 +33,6 @@
 }
 .education-bottom {
   min-width: 80%;
-  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,10 +43,137 @@
 }
 .bottoms {
   background-color: rgb(26, 10, 41);
-  height: 15vh;
+  height: auto;
+  min-height: 15vh;
   width: 90%;
   padding: 10px;
   border-radius: 7px;
+}
+.bottoms P {
+  font-size: 12px;
+  font-weight: 500;
+}
+.bottoms h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.bottoms span {
+  font-size: 14px;
+}
+.mark {
+  background-color: none;
+  font-weight: 600;
+  color: white;
+  font-size: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .education-background {
+    padding: 30px 15px;
+  }
+
+  .education-left,
+  .education-right {
+    width: 45%;
+  }
+
+  .experience {
+    font-size: 24px;
+  }
+
+  .bottoms h1 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .education-background {
+    flex-direction: column;
+    min-height: auto;
+    padding: 25px 15px;
+    gap: 30px;
+  }
+
+  .education-left,
+  .education-right {
+    width: 100%;
+  }
+
+  .experience {
+    font-size: 22px;
+  }
+
+  .education-bottom {
+    min-width: 100%;
+    min-height: auto;
+    gap: 2vh;
+  }
+
+  .bottoms {
+    width: 95%;
+    height: auto;
+    padding: 12px;
+  }
+
+  .bottoms h1 {
+    font-size: 16px;
+  }
+
+  .bottoms p {
+    font-size: 11px;
+  }
+
+  .bottoms span {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .education-background {
+    padding: 15px 12px;
+    gap: 20px;
+  }
+
+  .education-left,
+  .education-right {
+    gap: 3vh;
+  }
+
+  .experience {
+    font-size: 20px;
+  }
+
+  .education-bottom {
+    min-width: 100%;
+  }
+
+  .bottoms {
+    height: auto;
+    padding: 10px;
+  }
+
+  .bottoms h1 {
+    font-size: 14px;
+  }
+
+  .bottoms p {
+    font-size: 10px;
+  }
+
+  .bottoms span {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 360px) {
+  .experience {
+    font-size: 18px;
+  }
+
+  .bottoms h1 {
+    font-size: 13px;
+  }
 }
 .bottoms P {
   font-size: 12px;

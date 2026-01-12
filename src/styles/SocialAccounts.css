@@ -70,3 +70,118 @@
   margin: 0;
   text-align: center;
 }
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .SocialAccounts h1 {
+    font-size: 2.2rem;
+  }
+
+  .social-row {
+    gap: 30px;
+  }
+
+  .social-card {
+    width: 220px;
+    height: 28vh;
+  }
+
+  .social-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .social-card p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .SocialAccounts {
+    padding: 25px 15px;
+    min-height: auto;
+  }
+
+  .SocialAccounts h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .social-icons {
+    height: auto;
+    gap: 20px;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .social-row {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .social-card {
+    width: 200px;
+    height: 25vh;
+    padding: 15px 10px;
+  }
+
+  .social-img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .social-card p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .SocialAccounts {
+    padding: 15px 12px;
+  }
+
+  .SocialAccounts h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  .social-icons {
+    gap: 15px;
+  }
+
+  .social-row {
+    gap: 15px;
+  }
+
+  .social-card {
+    width: 170px;
+    height: 22vh;
+    padding: 12px 8px;
+  }
+
+  .social-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .social-card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .SocialAccounts h1 {
+    font-size: 1.6rem;
+  }
+
+  .social-card {
+    width: 150px;
+    height: 20vh;
+  }
+
+  .social-img {
+    width: 45px;
+    height: 45px;
+  }
+}

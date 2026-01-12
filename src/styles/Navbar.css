@@ -41,4 +41,69 @@ nav {
 .right a{
     text-decoration: none;
     color: white;
+    transition: color 0.3s ease;
+}
+.right a:hover {
+    color: #8b5cf6;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .right {
+        width: auto;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 15px 20px;
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+
+    .left {
+        gap: 8px;
+    }
+
+    .left span {
+        font-size: 13px;
+    }
+
+    .right {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 10px 12px;
+    }
+
+    .left {
+        gap: 6px;
+    }
+
+    .left img {
+        height: 40px;
+    }
+
+    .left span {
+        font-size: 11px;
+        display: none;
+    }
+
+    .right {
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .right a {
+        padding: 5px 8px;
+    }
 }
